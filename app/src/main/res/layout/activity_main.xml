@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.srcn4.linesendingtest.MainActivity">
+
+<EditText
+    android:id="@+id/edit_text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:ems="10"
+    android:hint="テキストを入力"
+    android:inputType="text"
+    android:selectAllOnFocus="false" />
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/edit_text1"
+    android:layout_alignLeft="@+id/edit_text1"
+    android:layout_alignStart="@+id/edit_text1"
+    android:onClick="sendLineMsg"
+    android:text="送信！" />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/edit_text1"
+    android:layout_alignEnd="@+id/edit_text1"
+    android:layout_alignRight="@+id/edit_text1"
+    android:text="追加！" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="80dp"
+    android:text="LINEテスト"
+    android:textColor="#111"
+    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</RelativeLayout>
